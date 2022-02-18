@@ -2,7 +2,12 @@ let video
 function setup() {
     createCanvas(200, 100)
 
-    video = createCapture(VIDEO)
+    createCapture({
+        audio: false,
+        video: {
+            facingMode: "user"
+        }
+    });
     video.size(width, height)
     video.hide()
 }
