@@ -2,7 +2,7 @@ let video
 function setup() {
     createCanvas(200, 100)
 
-    createCapture({
+    video = createCapture({
         audio: false,
         video: {
             facingMode: "user"
